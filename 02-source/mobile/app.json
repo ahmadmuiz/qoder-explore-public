@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Laras Field",
+    "slug": "laras-field",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "larasfield",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#0B3D32",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "id.co.bcn.laras.field",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Capture vendor kuitansi and transfer receipts for reconciliation evidence.",
+        "NSPhotoLibraryUsageDescription": "Attach an existing kuitansi photo as reconciliation evidence."
+      }
+    },
+    "android": {
+      "package": "id.co.bcn.laras.field",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B3D32"
+      },
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Attach a kuitansi photo to a reconciliation exception.",
+          "cameraPermission": "Capture a kuitansi or transfer receipt for reconciliation evidence."
+        }
+      ]
+    ],
+    "extra": {
+      "apiUrl": "http://127.0.0.1:4100"
+    }
+  }
+}

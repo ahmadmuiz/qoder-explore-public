@@ -1,0 +1,18 @@
+{
+  "name": "@laras/qa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "End-to-end and evidence harness for the Laras reconciliation pilot",
+  "scripts": {
+    "test": "npm run test:api",
+    "test:api": "tsx --test automated/api.test.ts",
+    "test:ui": "node scripts/ui-check.mjs",
+    "evidence": "node scripts/capture.mjs",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "tsx": "^4.19.2"
+  }
+}

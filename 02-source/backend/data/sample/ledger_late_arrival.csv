@@ -1,0 +1,2 @@
+transaction_id,amount,currency,value_date,vendor_code,invoice_number,account_mask,channel,description
+TRX/2026/09/1017,147852000,IDR,2026-11-15,VND-006,INV-2026-0018,7710-09-****-1204,RTGS,Late settlement INV-2026-0018
